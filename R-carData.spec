@@ -4,13 +4,12 @@
 #
 Name     : R-carData
 Version  : 3.0.2
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Summary  : Companion to Applied Regression Data Sets
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-car
 BuildRequires : R-car
 BuildRequires : buildreq-R
 
@@ -26,11 +25,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538330112
+export SOURCE_DATE_EPOCH=1552725538
 
 %install
+export SOURCE_DATE_EPOCH=1552725538
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538330112
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -65,8 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library carData|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  carData || :
 
 
 %files
