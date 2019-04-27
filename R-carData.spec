@@ -4,7 +4,7 @@
 #
 Name     : R-carData
 Version  : 3.0.2
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Summary  : Companion to Applied Regression Data Sets
