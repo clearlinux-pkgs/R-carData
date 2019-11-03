@@ -4,7 +4,7 @@
 #
 Name     : R-carData
 Version  : 3.0.2
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/carData_3.0-2.tar.gz
 Summary  : Datasets to Accompany J. Fox and S. Weisberg, An R Companion to Applied Regression, Third Edition, Sage (forthcoming).
