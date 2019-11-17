@@ -1,4 +1,5 @@
 # This file contains recursive sources that require this package
+R-Ecdat
 R-car
 R-effects
 R-systemfit
