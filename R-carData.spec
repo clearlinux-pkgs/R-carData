@@ -4,14 +4,12 @@
 #
 Name     : R-carData
 Version  : 3.0.3
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/carData_3.0-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/carData_3.0-3.tar.gz
-Summary  : Datasets to Accompany J. Fox and S. Weisberg, An R Companion to Applied Regression, Third Edition, Sage (forthcoming).
+Summary  : Companion to Applied Regression Data Sets
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-car
-BuildRequires : R-car
 BuildRequires : buildreq-R
 
 %description
@@ -20,21 +18,22 @@ Datasets to Accompany J. Fox and S. Weisberg,
 
 %prep
 %setup -q -c -n carData
+cd %{_builddir}/carData
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574007698
+export SOURCE_DATE_EPOCH=1589397455
 
 %install
-export SOURCE_DATE_EPOCH=1574007698
+export SOURCE_DATE_EPOCH=1589397455
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
