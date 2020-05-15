@@ -4,7 +4,7 @@
 #
 Name     : R-carData
 Version  : 3.0.3
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/carData_3.0-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/carData_3.0-3.tar.gz
 Summary  : Companion to Applied Regression Data Sets
@@ -25,10 +25,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589397455
+export SOURCE_DATE_EPOCH=1589506964
 
 %install
-export SOURCE_DATE_EPOCH=1589397455
+export SOURCE_DATE_EPOCH=1589506964
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
